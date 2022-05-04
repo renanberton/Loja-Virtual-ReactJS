@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+
+    h1 {
+        text-align: center;
+        margin: 40px 0;
+        font-family: "Francois One", sans-serif;
+    }
+
+.produtos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    flex-direction: row;
+    max-width: 70%;
+    flex-wrap: wrap;
+    gap: 100px;
+
+
+    .cardProduto {
+        width: 300px;
+        height: auto;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: #00000055 0px 1px 30px;
+        text-align: center;
+        border-radius: 5px;
+
+        
+        h1 {
+            color: #CA9899;
+            font-family: "Francois One", sans-serif;
+            letter-spacing: 1px;
+            font-size: 32px;
+            margin: 10px 0;
+        }
+        
+        h2 {
+            color: #000;
+            font-family: "Francois One", sans-serif;
+            letter-spacing: 1px;
+            font-size: 20px;
+            margin: 10px 0 0 0;
+        }
+        
+        h4 {
+            color: #CA9899;
+            font-family: "Francois One", sans-serif;
+            letter-spacing: 1px;
+            font-size: 36px;
+            margin: 20px 0 0 0;
+        }
+        
+        p {
+            color: #3C3C3C;
+            font-family: "Francois One", sans-serif;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        
+        span {
+            color: #3C3C3C;
+            font-family: "Francois One", sans-serif;
+            font-size: 16px;
+        }
+        
+        img {
+            height: auto;
+            width: 100%;
+            border-radius: 5px 5px 0 0;
+        }
+        
+        .btnComprar {
+            height: 50px;
+            width: 200px;
+            background-color: #E9CDC2;
+            color: #000;
+            border: none;
+            border-radius: 3px;
+            font-family: "Francois One", sans-serif;
+            font-size: 16px;
+            text-transform: uppercase;
+            margin: 10px 0;
+        }
+        
+        .btnCarrinho {
+            height: 50px;
+            width: 200px;
+            background-color: #CA989A;
+            color: #000;
+            border: none;
+            border-radius: 3px;
+            font-family: "Francois One", sans-serif;
+            font-size: 16px;
+            text-transform: uppercase;
+            margin: 10px 0 50px 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .produtos {
+        gap: 20px;
+        max-width: 90%;
+
+        .cardProduto {
+            width: 300px;
+            margin: 20px auto;
+        }
+    }
+}

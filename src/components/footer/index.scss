@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    background-color: #615E5E;
+    height: auto;
+    width: 100%;
+    padding: 20px 0;    
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+            width: auto;
+            margin: 0 auto;
+            font-family: "Francois One", sans-serif;
+            color: #fff;
+
+            p {
+                margin: 0;
+            }
+
+            h3 {
+                font-size: 30px;
+                font-family: "Francois One", sans-serif;
+                color: #fff;
+                letter-spacing: 1.5px;
+                margin-bottom: 5px;
+            }
+        }
+
+        .logos img {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            height: 50px;
+            width: 50px;
+        }
+
+        .logos {
+            margin: 10px 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .footer {
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        justify-self: center;
+        align-self: center;
+        
+        .nav-bar {
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+            ul {
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            flex-direction: column;
+            gap: 50px;
+            text-align: center;
+            padding: 0;
+
+            li {
+                justify-content: center;
+                align-items: center;
+                justify-self: center;
+                text-align: center;
+                margin: 10px 0;
+
+                .logos {
+                    width: 100%;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+
+}

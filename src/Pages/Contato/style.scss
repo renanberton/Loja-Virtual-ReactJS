@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E9CDC2;
+    overflow: hidden;
+
+    h1 {
+        font-family: "Francois One", sans-serif;
+        font-size: 36px;
+        color: #3c3c3c;
+        margin: 40px 0 20px 0;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Francois One", sans-serif;
+        width: 100%;
+        margin: 25px 0;
+
+        input {
+            width: 400px;
+            margin: 5px 0;
+        }
+
+        label {
+        font-size: 22px;
+        }
+
+        .inputMensagem {
+            height: 200px;
+        }
+
+        .btnEnviar {
+            width: 250px;
+            height: 50px;
+            background-color: #CA989A;
+            color: #000;
+            border: none;
+            margin: 50px 0;
+            font-size: 22px;
+        }
+
+    
+    }
+}
+
+@media (max-width: 425px) {
+    .contato {
+
+        h1 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        form {
+            width: 50%;
+
+            label {
+                width: 200px;
+                text-align: center;
+            }
+            
+            input {
+                width: 240px;
+            }
+            
+            .inputMensagem {
+                width: 240px;
+            }
+        }
+    }
+}

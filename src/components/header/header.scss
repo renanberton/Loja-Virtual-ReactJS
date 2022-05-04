@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: #CA9899;
+    gap: 10px;
+    overflow: hidden;
+
+    img {
+        height: 100px;
+        width: auto;
+    }
+    
+    .menu {        
+        ul {            
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            padding: 0;
+
+            li {
+                list-style: none;
+                margin: 10px 0;
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 22px;
+                    font-family: 'Francois One', sans-serif;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .nav-bar{
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
+
+        .menu {
+            ul {
+                gap: 25px;
+            }
+        }
+        
+    }
+}
